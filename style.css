@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    color: #fff;
+
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+   
+}
+
+h1{ 
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;   
+}
+
+img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main_container{
+    margin: 3em auto;
+    width: 80%;
+    text-align: center;
+}
+
+.header{
+    width: 42%;
+}
+
+.main{
+    margin: 3em auto;
+}
+
+.hero_image_container{
+    margin-bottom: 4rem;
+}
+
+.title_description{
+   font: 200 normal 1rem/1.5rem 'Open Sans', sans-serif;
+   color: rgb(245, 245, 245);
+
+}
+
+.CTA_btn_container{
+    margin: 3em auto;
+}
+.CTA_btn{
+    background-color: #fff;
+    border-radius: 100px;
+    width: 100%;
+    padding: 0.75em 6em;
+    color: hsl(257, 40%, 49%);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0px 10px 20px hsl(257, 44%, 38%);
+}
+
+.footer{
+    margin: 3em auto;
+    margin-top: 5rem;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.social_icons{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.social_icon{
+   font-size: 1.25rem;
+   height: 40px;
+   width: 40px;
+   border: 2px solid #fff;
+   border-radius: 100px;
+   margin: 0.5rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.social_link{
+    color: #fff;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    body{
+        height: 100vh;
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-position: top;
+    }
+
+    .main_container{
+        width: 90%;
+        max-width: 1440px;
+        display: grid;
+    }
+
+    .header{
+       width: 15%;
+       text-align: start;
+   }
+
+    .main{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        text-align: start;
+        margin: 5rem auto;
+        margin-bottom: 0;
+    }
+    .hero_image_container{
+        margin: 0;
+    }
+    .hero_image{
+        justify-self: center;
+        align-self: center;
+        width: 95%;
+    }
+    .hero_section{
+        padding-left: 1rem;
+    }
+    .CTA_btn_container{
+        margin: 2rem 0rem;
+    }
+    .CTA_btn{
+        padding: 1em 4em;
+    }
+    
+
+    .footer{
+        margin-top: 0;
+        justify-content: end;
+    }
+    
+}
+
+
+
